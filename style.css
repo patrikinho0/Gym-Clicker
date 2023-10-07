@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120%;
+    text-align: center;
+}
+
+img{
+    border-radius: 100%;
+}
+button{
+    text-align: center;
+    font-size: 120%;
+    border-radius: 10%;
+    margin: 5px;
+}
+button:hover{
+    background-color: rgb(215, 223, 230);
+}
+
+.full-height{
+    height: 230vh;
+}
+
+:root{
+    --bs-body-font-family: 'Montserrat', sans-serif;
+}

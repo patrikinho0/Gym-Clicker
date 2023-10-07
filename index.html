@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <title>Gym Clicker Tycoon</title>
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid full-height">
+        <div class="header">
+            <h1>Gym Clicker Tycoon</h1>
+        </div>
+        <div class="row full-height">
+            <div class="col-md-4 full-height">
+                <div class="bg-primary p-3 text-white full-height">
+                    <h1>THE SHOP</h1>
+                    <div class="per-seconds">
+                        <h3>Per seconds:</h3>
+                        <div class="exercise">
+                            <p>Price of this upgrade: 10 training points.</p>
+                            <button type="button" id="choice" class="choice1" value="10">Bench Press +10/s</button><br>
+                            <img src="images/pbp.png" alt="Bench Press"><br><br>
+                        </div>
+                        <div class="exercise">
+                            <p>Price of this upgrade: 15 training points.</p>
+                            <button type="button" id="choice" class="choice2" value="15">Deadlift +15/s</button><br>
+                            <img src="images/pdl.png" alt="Deadlift"><br><br><br>
+                        </div>
+                    </div>
+                    <div class="per-clicks">
+                        <h3>Per clicks:</h3>
+                        <div class="supplement">
+                            <p>Price of this upgrade: 20 training points.</p>
+                            <button type="button" id="choice" class="choice3" value="20">Creatine +20/click</button><br>
+                            <img src="images/sc1.png" alt="Creatine"><br><br>
+                        </div>
+                        <div class="supplement">
+                            <p>Price of this upgrade: 25 training points.</p>
+                            <button type="button" id="choice" class="choice4" value="25">Pre-workout +25/click</button><br>
+                            <img src="images/sp1.png" alt="Pre-workout">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 full-height">
+                <div class="bg-success p-3 text-white full-height">
+                    <h1>THE TYCOON</h1>
+                    <div class="clicker">
+                        <button type="button" id="clicker">Train</button>
+                    </div>
+                    <div class="info">
+                        <h3>By training you will get 1 Strength points.</h3><br>
+                        <h4>Currently you are getting 0 Strength per second.</h4><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 full-height">
+                <div class="bg-danger p-3 text-white full-height">
+                    <h1>THE STRENGTH</h1>
+                    <div class="counter">
+                        <p>Your strength is currently: 1</p>
+                        <img src="images/lvl1.png" alt="Your Physique" id="myImage">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>2023 - Gym Clicker Tycoon copyright by Pat & Mac</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
