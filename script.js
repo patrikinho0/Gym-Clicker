@@ -20,13 +20,12 @@ document.querySelectorAll("#choice").forEach(function(button) {
             console.log(strength)
             strength -= upgradeCost;
             if(button.value === "20"){
-                clickRate = 20;
+                clickRate += 20;
                 console.log(clickRate)
             }
             else if(button.value === "25"){
-                clickRate = 25;
+                clickRate += 25;
                 console.log(clickRate)
-
             }
             clickCount += clickRate;
 
