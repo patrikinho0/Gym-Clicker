@@ -1,30 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-html{
-    padding: 0;
+body {
     margin: 0;
+    padding: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 120%;
+    font-size: 16px;
+    background-image: url('images/background-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
+}
+
+.container-fluid {
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.row {
+    margin: 20px 0;
+}
+
+.col-md-4.full-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.bg-primary, .bg-success, .bg-danger {
+    border-radius: 15px;
+    padding: 20px;
     text-align: center;
+    margin: 10px;
 }
 
-img{
-    border-radius: 100%;
+.bg-primary h1, .bg-success h1, .bg-danger h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
-button{
+
+.per-seconds, .per-clicks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.exercise, .supplement {
+    flex: 1;
+    padding: 20px;
     text-align: center;
-    font-size: 120%;
-    border-radius: 10%;
-    margin: 5px;
-}
-button:hover{
-    background-color: rgb(215, 223, 230);
+    transition: transform 0.2s ease-in-out;
 }
 
-.full-height{
-    height: 230vh;
+.exercise:hover, .supplement:hover {
+    transform: scale(1.05);
 }
 
-:root{
-    --bs-body-font-family: 'Montserrat', sans-serif;
+.exercise img, .supplement img {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.clicker button {
+    margin-bottom: 30px;
+}
+
+.info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.info h4 {
+    font-size: 1rem;
+}
+
+.counter p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
 }
